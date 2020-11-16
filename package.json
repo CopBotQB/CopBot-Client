@@ -1,0 +1,29 @@
+{
+  "name": "CopBot",
+  "version": "1.0.0",
+  "description": "Placeholder",
+  "main": "lib/main.js",
+  "author": "Eamin Ahmed",
+  "license": "MIT",
+  "keywords": [
+    "desktop",
+    "electron",
+    "Discord"
+  ],
+  "scripts": {
+    "start": "electron ./lib/main.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "electron-context-menu": "2.x",
+    "electron-dl": "3.x",
+    "electron-squirrel-startup": "1.x",
+    "electron-window-state": "5.x",
+    "node-localstorage": "^2.1.6",
+    "source-map-support": "0.x",
+    "wurl": "2.x"
+  },
+  "devDependencies": {
+    "electron": "10.x"
+  }
+}
