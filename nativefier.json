@@ -21,7 +21,7 @@
   "internalUrls": "discord|file",
   "blockExternalUrls": false,
   "maximize": false,
-  "name": "Discord",
+  "name": "CopBot",
   "nativefierVersion": "10.1.0",
   "proxyRules": null,
   "showMenuBar": false,
