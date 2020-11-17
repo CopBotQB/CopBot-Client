@@ -105,6 +105,21 @@
   clear: none;
   text-align: left;
 }
+
+.ajs-ok {
+  background: rgba(91, 189, 114, 0.95);
+  border: 1px solid #7289DA;
+  border-radius: 3px;
+  color: #FFFFFF;
+}
+
+.ajs-cancel {
+  background: rgba(217, 92, 92, 0.95);
+  border: 1px solid #7289DA;
+  border-radius: 3px;
+  color: #FFFFFF;
+}
+
 .alertify .ajs-footer .ajs-buttons.ajs-auxiliary .ajs-button {
   margin: 4px;
 }

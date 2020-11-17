@@ -10,8 +10,8 @@
 .alertify .ajs-dialog {
   max-width: 50%;
   min-height: 137px;
-  background-color: #F4F4F4;
-  border: 1px solid #DDD;
+  background-color: #2C2F33;
+  border: 1px solid #7289DA;
   -webkit-box-shadow: none;
           box-shadow: none;
   border-radius: 5px;
@@ -20,16 +20,17 @@
   padding: 1.5rem 2rem;
   border-bottom: none;
   border-radius: 5px 5px 0 0;
-  color: #555;
-  background-color: #fff;
+  color: #7289DA;
+  background-color: #23272A;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.6em;
   font-weight: 700;
 }
 .alertify .ajs-body {
   font-family: 'Roboto', sans-serif;
-  color: #555;
+  color: #FFFFFF;
 }
+
 .alertify .ajs-body .ajs-content .ajs-input {
   width: 100%;
   margin: 0;
@@ -61,7 +62,7 @@
   bottom: 74px;
 }
 .alertify .ajs-footer {
-  background-color: #fff;
+  background-color: #23272A;
   padding: 1rem 2rem;
   border-top: none;
   border-radius: 0 0 5px 5px;
@@ -75,11 +76,13 @@
 }
 .alertify-notifier .ajs-message.ajs-success {
   color: #fff;
+  border: 1px solid #7289DA;
   background: rgba(91, 189, 114, 0.95);
   text-shadow: 1px -1px 0 rgba(0, 0, 0, 0.5);
 }
 .alertify-notifier .ajs-message.ajs-error {
   color: #fff;
+  border: 1px solid #7289DA;
   background: rgba(217, 92, 92, 0.95);
   text-shadow: 1px -1px 0 rgba(0, 0, 0, 0.5);
 }
