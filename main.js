@@ -29,6 +29,7 @@ function createWindow() {
             contextIsolation: true
         }
     });
+    mainWindow.removeMenu();
     mainWindow.setTitle("CopBot Client");
     mainWindow.loadURL('http://localhost:4570', {userAgent: 'Chrome'});
 }
