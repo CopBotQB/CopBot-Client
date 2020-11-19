@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CopBot Login</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script
+            src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+            defer
+    ></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.0.2/firebase-analytics.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.0.2/firebase-database.js"></script>
+    <script defer src="./js/firebase.js"></script>
+    <script src="./js/alertify/alertify.min.js"></script>
+    <link rel="stylesheet" href="./js/alertify/css/alertify.css"/>
+    <link rel="stylesheet" href="./js/alertify/css/themes/semantic.rtl.css"/>
+</head>
+<body>
+
+<div class="login-page">
+    <div class="form">
+        <div class="google-btn" id="loginbutton" onclick="googleOauth2()">
+            <div class="google-icon-wrapper">
+                <img class="google-icon-svg"
+                     src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
+            </div>
+            <p class="btn-text"><b>Sign in with Google</b></p>
+        </div>
+    </div>
+</div>
+<div id="image-wrapper">
+    <img src="./copbot.png" alt="CopBot Logo" id="img">
+</div>
+<p id="redirect">busy</p>
+<p id="outdated-version">no</p>
+<script src="./js/scripts.js"></script>
+</body>
+</html>

@@ -1,31 +1,27 @@
 {
-  "name": "CopBot",
+  "name": "CopBot-Client",
   "version": "1.0.0",
-  "description": "Placeholder",
-  "main": "lib/main.js",
-  "author": "Eamin Ahmed",
-  "license": "MIT",
-  "keywords": [
-    "desktop",
-    "electron",
-    "Discord"
-  ],
+  "description": "Desktop client for CopBot",
+  "main": "main.js",
   "scripts": {
-    "start": "electron ./lib/main.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^11.0.1",
+    "electron-packager": "^15.1.0"
   },
   "dependencies": {
     "axios": "^0.21.0",
-    "electron-context-menu": "2.x",
-    "electron-dl": "3.x",
-    "electron-squirrel-startup": "1.x",
     "electron-store": "^6.0.1",
-    "electron-window-state": "5.x",
-    "node-localstorage": "^2.1.6",
-    "node-machine-id": "^1.1.12",
-    "source-map-support": "0.x",
-    "wurl": "2.x"
-  },
-  "devDependencies": {
-    "electron": "10.x"
+    "express": "^4.17.1",
+    "firebase": "^8.0.2",
+    "jQuery": "^1.7.4",
+    "remote": "^0.2.6",
+    "serve-index": "^1.9.1",
+    "serve-static": "^1.14.1"
   }
 }
