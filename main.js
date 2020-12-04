@@ -14,9 +14,11 @@ expressApp.use(express.static(__dirname + '/public/css'));
 expressApp.use(express.static(__dirname + '/public/js'));
 expressApp.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/public/index.html'));
-})
+});
 
-let server = expressApp.listen(4570);
+let server = expressApp.listen(0, function () {
+    console.log('Listening on port ' + server.address().port);
+});
 
 
 function createWindow() {
@@ -31,8 +33,23 @@ function createWindow() {
     });
     mainWindow.removeMenu();
     mainWindow.setTitle("CopBot Client");
-    mainWindow.loadURL('http://localhost:4570', {userAgent: 'Chrome'});
+    mainWindow.loadURL('http://localhost:' + server.address().port, {userAgent: 'Chrome/85.0.4183.87'});
 }
+
+const gotTheLock = app.requestSingleInstanceLock()
+
+if (!gotTheLock) {
+    app.quit()
+} else {
+    app.on('second-instance', (event, commandLine, workingDirectory) => {
+        // Someone tried to run a second instance, we should focus our window.
+        if (BrowserWindow.getAllWindows()[0]) {
+            if (BrowserWindow.getAllWindows()[0].isMinimized()) myWindow.restore()
+            BrowserWindow.getAllWindows()[0].focus()
+        }
+    });
+}
+
 
 app.whenReady().then(() => {
     createWindow();
